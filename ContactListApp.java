@@ -1,7 +1,7 @@
 
 /**
  * @author mechellepresnell
- * This is project 7-1 working with OOP: classes and instantiation 
+ * This is project working with OOP: classes and instantiation 
  * This application uses classes to 
  * store and display contact information
  */
@@ -12,11 +12,9 @@ public class ContactListApp {
         System.out.println();       
         String choice = "y";
         while (choice.equalsIgnoreCase("y")) {
-           //calling the Console class to get first name
+           //calling the Console class to get first ans last names
            String fName = Console.getString("Enter first name:  ");          
-           //call the Console class to get the last name
            String lName = Console.getString("Enter last name:  ");           
-           //call the Console class to get the email
 
           String email;
             do {
@@ -24,7 +22,7 @@ public class ContactListApp {
               if (!Console.patternMatches(email, "^(.+)@(\\S+)$")) {
                System.out.println("Email address not valid. Please try again!");
               }
-            //call the Console class to get the email    
+            //call the Console class to get the email  
             } while (!Console.patternMatches(email, "^(.+)@(\\S+)$"));
            //call the Console class to get the phone
            String phone = Console.getString("Enter phone:  ");
